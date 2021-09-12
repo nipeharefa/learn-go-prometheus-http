@@ -1,0 +1,11 @@
+global:
+  scrape_interval: 2m
+  scrape_timeout: 10s
+  evaluation_interval: 1m
+  query_log_file: /prometheus/query.log
+
+scrape_configs:
+- job_name: nipeharefa
+  scrape_interval: 5s
+  static_configs:
+    - targets: [192.168.31.196:4123]
